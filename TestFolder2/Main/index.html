@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="../CSS/index.css">
+<!--        <script src="http://libs.baidu.com/jquery/1.10.2/jquery.min.js"></script>-->
+        <style>
+
+        </style>
+    </head>
+    <body>
+        <div id="firstImg">
+            <div id="Introduce">
+                <p id="p1">新成</p>
+                <p id="p2">星辰</p>
+                <div id="firstBTN">
+                    <button style="margin-right:110px; width:100px;height:30px; border-radius: 10px;">註冊</button>
+                    <button style="width:100px;height:30px; border-radius: 10px;">登入</button>
+                </div>
+            </div>
+          
+        </div>
+        
+        <div style="position: relative; width: 100%; height: 650px;">
+            <div id="secondDIV1">
+                    <img class="secondDIV1img" src="https://i.ytimg.com/vi/nDXIWS3QKcs/maxresdefault.jpg"  />
+                    <h2>冰糖燉雪梨</h2>
+                    <p>主演: 吳倩, 張新成</p>
+                    <p>2020年中國大陸偶像劇，該劇根據酒小七同名小說改編，講述棠雪在大學校園裡重逢兒時同桌黎語冰，兩人在追逐冰上夢想的過程中，收穫愛情的故事。</p>
+                    <div class="sencondDIVLink">
+                        <a href="https://zh.wikipedia.org/wiki/%E5%86%B0%E7%B3%96%E7%82%96%E9%9B%AA%E6%A2%A8" target="_blank">了解更多</a>
+                    </div>
+            </div>
+            <div id="secondDIV2">
+                <img class="secondDIV1img" src="http://image.uc.cn/s/wemedia/s/upload/2021/89f3c4c7feb8b7dc110a298a612891b0.jpg" />
+                <h2>光芒</h2>
+                <p>主演: 蔡文靜, 張新成</p>
+                <p>在二十世紀二三十年代的上海，出身寒微的程亦治，偶然結識了銀行家吳知拂，以及他的女兒麗姿。自此，就像被一點光芒照亮，點燃了他內心的理想。</p>
+                <div class="sencondDIVLink">
+                <a href="https://baike.baidu.hk/item/%E5%85%89%E8%8A%92/6393443" target="_blank">了解更多</a>
+                </div>
+                <div class="clear"></div>
+            </div>
+            
+        </div>
+        
+        
+        
+        <div id="thirdDIVBG">
+            <div id="thirdDIVvideo">
+                <iframe id="dramaPreview" style="width: 100%; height: 100%;" src="https://www.youtube.com/embed/LMReWwqD9_c" title="以家人之名" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+            </div>
+            
+            <div id="thridDIVvideoList">
+                <p class="videoListItem" itemnum=0 onclick="changeVideo(this)">01以家人之名</p>
+                <p class="videoListItem" itemnum=1 onclick="changeVideo(this)">02變成你的那一天</p>
+                <p class="videoListItem" itemnum=2 onclick="changeVideo(this)">03冰糖燉雪梨</p>
+                <p class="videoListItem" itemnum=3 onclick="changeVideo(this)">04光芒</p>
+            </div>
+        </div>
+        
+        <div id="forthDIVbg">
+            <div class="forthDIVimg">
+                <img class="forthDIVimg1" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRgRugsQsvCPK1LATUgkX8PeYLCx1RM8Qaig&usqp=CAU" />
+            </div>
+            <div class="forthDIVimg">
+                <img class="forthDIVimg1" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQV5ACJMH1Gt2wr5Z5w4AjzrGQV_MqSRbxEdw&usqp=CAU" />
+            </div>
+            <div class="forthDIVimg">
+                <img class="forthDIVimg1" src="http://5b0988e595225.cdn.sohucs.com/images/20200306/9154e6a61cb24685a7b12dcc28bd8ec7.jpeg" />
+            </div>
+            <div class="forthDIVimg">
+                <img class="forthDIVimg1"  src="https://pic.happytify.cc/uploads/20210928/87/7878460CDD39w1056h595.jpeg" />
+            </div>
+            
+            <div id="forthDIVul1">
+                <ul>
+                    <li>link</li>
+                    <li>link</li>
+                    <li>link</li>
+                </ul>
+
+            </div>
+            
+            <div id="forthDIVul2">
+                <ul>
+                    <li>link</li>
+                    <li>link</li>
+                    <li>link</li>
+                </ul>
+
+            </div>
+            
+            <div id="forthDIVicon1">
+                <img src="https://cdn3.iconfinder.com/data/icons/capsocial-round/500/facebook-512.png" style="width: 100%; height: 100%;"/>
+            </div>
+            <div id="forthDIVicon2">
+                <img src="https://seeklogo.com/images/I/instagram-icon-logo-4D790D4C15-seeklogo.com.png" style="width: 100%; height: 100%;"/>
+            </div>
+            <div id="forthDIVicon3">
+                <img src="https://upload.wikimedia.org/wikipedia/zh/thumb/4/46/Sina_Weibo_logo.svg/1200px-Sina_Weibo_logo.svg.png" style="width: 100%; height: 100%;"/>
+            </div>
+            
+        </div>
+        
+        <script>
+            
+            let videoSrcArray = [
+                "https://www.youtube.com/embed/LMReWwqD9_c",
+                "https://www.youtube.com/embed/Rc59v_C8AOc",
+                "https://www.youtube.com/embed/hm0S8IH1BJU",
+                "https://www.youtube.com/embed/QyGCCYM4CLA"
+            ]
+            let videoPlayer = document.getElementById("dramaPreview");
+            
+            function changeVideo(e){
+                let videoNum = e.getAttribute("itemnum");
+                videoPlayer.setAttribute("src",videoSrcArray[videoNum])
+            }
+
+        </script>
+        
+    
+        
+    </body>
+</html>
